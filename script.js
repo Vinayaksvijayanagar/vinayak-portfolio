@@ -1,3 +1,50 @@
+// -------------------- Animated Particles Background --------------------
+const canvas = document.getElementById("particles-bg");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const particles = [];
+
+for (let i = 0; i < 80; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    size: Math.random() * 2 + 1,
+    speedX: (Math.random() - 0.5) * 0.7,
+    speedY: (Math.random() - 0.5) * 0.7,
+  });
+}
+
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((p) => {
+    ctx.fillStyle = "rgba(124, 58, 237, 0.8)";
+    ctx.shadowColor = "#7c3aed";
+    ctx.shadowBlur = 8;
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fill();
+
+    p.x += p.speedX;
+    p.y += p.speedY;
+
+    if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+  });
+
+  requestAnimationFrame(drawParticles);
+}
+
+drawParticles();
+
 // 3D tilt effect for cards
 document.querySelectorAll('.tilt-card').forEach((card) => {
   const intensity = 10; // degrees
@@ -29,3 +76,4 @@ document.querySelectorAll('.tilt-card').forEach((card) => {
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+
