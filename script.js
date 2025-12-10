@@ -98,6 +98,27 @@ document.addEventListener("mousemove", (e) => {
     dot.remove();
   }, 600);
 });
+// ---------------- 3D Tilt on Project Cards ----------------
+document.querySelectorAll(".project-card").forEach((card) => {
+  const inner = card.querySelector(".project-card-inner");
+
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    const rotateX = (y / 20) * -1;
+    const rotateY = x / 20;
+
+    inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    inner.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+});
+
+
 
 
 
