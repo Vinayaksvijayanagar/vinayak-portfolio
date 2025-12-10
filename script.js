@@ -44,6 +44,16 @@ function drawParticles() {
 }
 
 drawParticles();
+// -------------------- 3D Parallax Scroll Effect --------------------
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  document.querySelectorAll(".parallax").forEach((el, index) => {
+    const depth = (index + 1) * 0.25;
+    el.style.transform = `translateY(${scrollY * depth * 0.03}px)`;
+  });
+});
+
 
 // 3D tilt effect for cards
 document.querySelectorAll('.tilt-card').forEach((card) => {
@@ -76,4 +86,5 @@ document.querySelectorAll('.tilt-card').forEach((card) => {
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+
 
