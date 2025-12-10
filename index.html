@@ -6,12 +6,15 @@
   <title>Vinayak SV | AI/ML Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- 🔥 PARTICLES BACKGROUND -->
   <canvas id="particles-bg"></canvas>
 
   <div class="bg-orbit"></div>
   <div class="bg-orbit orbit-2"></div>
 
+  <!-- NAVBAR -->
   <header class="nav">
     <div class="logo">VINAYAK<span>SV</span></div>
     <nav>
@@ -25,8 +28,9 @@
   </header>
 
   <main>
+
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero parallax">
       <div class="hero-left">
         <p class="location">📍 Belagavi, India</p>
         <h1 class="hero-title">
@@ -43,7 +47,7 @@
         </div>
         <div class="hero-meta">
           <span>📧 vinayakvijayanagar6@gmail.com</span>
-          <span>📱  +91 99451 93613</span>
+          <span>📱 +91 99451 93613</span>
         </div>
       </div>
 
@@ -63,8 +67,8 @@
       </div>
     </section>
 
-    <!-- ABOUT / EDUCATION -->
-    <section id="about" class="section">
+    <!-- ABOUT -->
+    <section id="about" class="section parallax">
       <h2 class="section-title">About & Education</h2>
       <div class="grid two">
         <div class="card about-card tilt-card">
@@ -84,9 +88,7 @@
           <h3>Education</h3>
           <ul class="timeline">
             <li>
-              <div class="timeline-title">
-                East Point College of Engineering and Technology
-              </div>
+              <div class="timeline-title">East Point College of Engineering and Technology</div>
               <div class="timeline-sub">
                 BE in Artificial Intelligence and Data Science (2021 – 2025)
               </div>
@@ -96,16 +98,12 @@
               </div>
             </li>
             <li>
-              <div class="timeline-title">Alvas Pre-University – Class XII (PUC)</div>
-              <div class="timeline-meta">
-                Percentage: <strong>99.3%</strong> (2021)
-              </div>
+              <div class="timeline-title">Alvas Pre-University – Class XII</div>
+              <div class="timeline-meta">Percentage: <strong>99.3%</strong> (2021)</div>
             </li>
             <li>
-              <div class="timeline-title">Government High School – Class X (SSLC)</div>
-              <div class="timeline-meta">
-                Percentage: <strong>94.08%</strong> (2019)
-              </div>
+              <div class="timeline-title">Government High School – SSLC</div>
+              <div class="timeline-meta">Percentage: <strong>94.08%</strong> (2019)</div>
             </li>
           </ul>
         </div>
@@ -113,23 +111,17 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section id="experience" class="section parallax">
       <h2 class="section-title">Experience</h2>
       <div class="grid two">
+
         <div class="card tilt-card">
           <span class="chip">Jun 2025 – Present · Remote</span>
           <h3>GenAI Intern</h3>
           <p class="company">Vidarka Technology</p>
           <ul class="list">
-            <li>
-              Applied foundational concepts of audio, video, and image representation and compression,
-              implementing image processing techniques using <strong>OpenCV with C/C++</strong> for
-              efficient visual data analysis.
-            </li>
-            <li>
-              Developed and evaluated AI models for real-world problems, comparing performance across
-              architectures based on <strong>accuracy, processing time, and computational complexity</strong>.
-            </li>
+            <li>Applied audio/video/image compression and OpenCV techniques in C/C++.</li>
+            <li>Developed and evaluated AI models based on accuracy, speed, and complexity.</li>
           </ul>
         </div>
 
@@ -138,245 +130,157 @@
           <h3>AI-ML Engineer</h3>
           <p class="company">Rooman Technologies Pvt. Ltd.</p>
           <ul class="list">
-            <li>
-              Developed an <strong>ensemble classification framework</strong> integrating SVM,
-              Decision Tree, Logistic Regression, and Random Forest.
-            </li>
-            <li>
-              Achieved improved accuracy compared to individual models across benchmark datasets,
-              focusing on robustness and generalization.
-            </li>
+            <li>Built ensemble models combining SVM, DT, LR, RF.</li>
+            <li>Achieved improved accuracy across benchmark datasets.</li>
           </ul>
         </div>
+
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects" class="section parallax">
       <h2 class="section-title">Featured Projects</h2>
       <div class="grid three">
+
         <article class="card project-card tilt-card">
           <div class="project-pill">AI · CV · Web App</div>
           <h3>Coffee Leaf Disease Detection Web App</h3>
-          <p class="tech">
-            Python · TensorFlow · Flask · React · Render · Netlify
-          </p>
-          <p>
-            Built a TensorFlow-powered CNN web app to identify
-            <strong>19 coffee leaf diseases</strong> with over <strong>92% accuracy</strong>,
-            including <strong>multilingual support</strong> and <strong>voice search</strong>
-            for accessibility.
-          </p>
-          <p>
-            Engineered an end-to-end workflow—from model training and real-time REST API predictions to
-            cloud deployment—enabling farmers to detect diseases early and improve crop management.
-          </p>
-          <a href="https://github.com/Vinayaksvijayanagar/coffe-plant-disease-detection-using-ML"target="_blank" class="project-link">
-            View GitHub Repo →
-          </a>
+          <p class="tech">Python · TensorFlow · Flask · React</p>
+          <p>Built a 92% accurate CNN that detects 19 coffee leaf diseases.</p>
+          <a href="https://github.com/Vinayaksvijayanagar/coffe-plant-disease-detection-using-ML" target="_blank" class="project-link">View GitHub Repo →</a>
         </article>
 
         <article class="card project-card tilt-card">
           <div class="project-pill">Full-Stack · PHP</div>
           <h3>Blood Bank Management System</h3>
-          <p class="tech">
-            PHP · HTML · MySQL
-          </p>
-          <p>
-            Developed a dynamic web-based system for blood inventory tracking, donor registration,
-            and real-time availability status, helping streamline blood request and donation workflows.
-          </p>
-          <a href="https://github.com/Vinayaksvijayanagar/Blood-bank-managnmengt-System" target="_blank" class="project-link">
-            View GitHub Repo →
-          </a>
+          <p class="tech">PHP · HTML · MySQL</p>
+          <p>Web system for donor registration and blood availability tracking.</p>
+          <a href="https://github.com/Vinayaksvijayanagar/Blood-bank-managnmengt-System" target="_blank" class="project-link">View GitHub Repo →</a>
         </article>
 
         <article class="card project-card tilt-card">
           <div class="project-pill">ML · Time Series</div>
           <h3>Rainfall Prediction using Machine Learning</h3>
-          <p class="tech">
-            Python · AdaBoost · Matplotlib
-          </p>
-          <p>
-            Built a rainfall forecasting model using <strong>AdaBoost</strong> with historical weather
-            data, improving prediction accuracy compared to decision trees.
-          </p>
-          <p>
-            Visualized rainfall trends with Matplotlib and enhanced model robustness through
-            hyperparameter tuning and seasonal data preprocessing.
-          </p>
-          <a href="https://github.com/Vinayaksvijayanagar/Rainfall-Prediction-using-ML" target="_blank" class="project-link">
-            View GitHub Repo →
-          </a>
+          <p class="tech">Python · AdaBoost · Matplotlib</p>
+          <p>Forecasting model improving predictions using AdaBoost.</p>
+          <a href="https://github.com/Vinayaksvijayanagar/Rainfall-Prediction-using-ML" target="_blank" class="project-link">View GitHub Repo →</a>
         </article>
+
       </div>
     </section>
 
     <!-- SKILLS -->
-     <section id="skills" class="section">
-  <h2 class="section-title">Skills & Technologies</h2>
-  <div class="grid three">
-    <!-- LANGUAGES -->
-    <div class="card tilt-card">
-      <h3>Languages</h3>
-      <div class="skill-icons">
-        <div class="skill-item">
-          <img src="icons/python_neon3d.svg" alt="Python">
-          <span>Python</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/java_neon3d.svg" alt="Java">
-          <span>Java</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/c_neon3d.svg" alt="C">
-          <span>C</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/sql_neon3d.svg" alt="SQL">
-          <span>SQL</span>
-        </div>
-      </div>
-    </div>
+    <section id="skills" class="section parallax">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="grid three">
 
-    <!-- ML / DL -->
-    <div class="card tilt-card">
-      <h3>ML / DL</h3>
-      <div class="skill-icons">
-        <div class="skill-item">
-          <img src="icons/scikit-learn_neon3d.svg" alt="Scikit-learn">
-          <span>Scikit-learn</span>
+        <!-- Languages -->
+        <div class="card tilt-card">
+          <h3>Languages</h3>
+          <div class="skill-icons">
+            <div class="skill-item"><img src="icons/python_neon3d.svg"><span>Python</span></div>
+            <div class="skill-item"><img src="icons/java_neon3d.svg"><span>Java</span></div>
+            <div class="skill-item"><img src="icons/c_neon3d.svg"><span>C</span></div>
+            <div class="skill-item"><img src="icons/sql_neon3d.svg"><span>SQL</span></div>
+          </div>
         </div>
-        <div class="skill-item">
-          <img src="icons/pandas_neon3d.svg" alt="Pandas">
-          <span>Pandas</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/numpy_neon3d.svg" alt="NumPy">
-          <span>NumPy</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/tensorflow_neon3d.svg" alt="TensorFlow">
-          <span>TensorFlow</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/pytorch_neon3d.svg" alt="PyTorch">
-          <span>PyTorch</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- TOOLS & PLATFORMS -->
-    <div class="card tilt-card">
-      <h3>Tools & Platforms</h3>
-      <div class="skill-icons">
-        <div class="skill-item">
-          <img src="icons/powerbi_neon3d.svg" alt="Power BI">
-          <span>Power BI</span>
+        <!-- ML / DL -->
+        <div class="card tilt-card">
+          <h3>ML / DL</h3>
+          <div class="skill-icons">
+            <div class="skill-item"><img src="icons/scikit-learn_neon3d.svg"><span>Scikit-learn</span></div>
+            <div class="skill-item"><img src="icons/pandas_neon3d.svg"><span>Pandas</span></div>
+            <div class="skill-item"><img src="icons/numpy_neon3d.svg"><span>NumPy</span></div>
+            <div class="skill-item"><img src="icons/tensorflow_neon3d.svg"><span>TensorFlow</span></div>
+            <div class="skill-item"><img src="icons/pytorch_neon3d.svg"><span>PyTorch</span></div>
+          </div>
         </div>
-        <div class="skill-item">
-          <img src="icons/tableau_neon3d.svg" alt="Tableau">
-          <span>Tableau</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/excel_neon3d.svg" alt="Excel">
-          <span>Excel</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/jupyter_neon3d.svg" alt="Jupyter">
-          <span>Jupyter</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/vscode_neon3d.svg" alt="VS Code">
-          <span>VS Code</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/git_neon3d.svg" alt="Git">
-          <span>Git</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/mysql_neon3d.svg" alt="MySQL">
-          <span>MySQL</span>
-        </div>
-        <div class="skill-item">
-          <img src="icons/mongodb_neon3d.svg" alt="MongoDB">
-          <span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
+        <!-- Tools -->
+        <div class="card tilt-card">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-icons">
+            <div class="skill-item"><img src="icons/powerbi_neon3d.svg"><span>Power BI</span></div>
+            <div class="skill-item"><img src="icons/tableau_neon3d.svg"><span>Tableau</span></div>
+            <div class="skill-item"><img src="icons/excel_neon3d.svg"><span>Excel</span></div>
+            <div class="skill-item"><img src="icons/jupyter_neon3d.svg"><span>Jupyter</span></div>
+            <div class="skill-item"><img src="icons/vscode_neon3d.svg"><span>VS Code</span></div>
+            <div class="skill-item"><img src="icons/git_neon3d.svg"><span>Git</span></div>
+            <div class="skill-item"><img src="icons/mysql_neon3d.svg"><span>MySQL</span></div>
+            <div class="skill-item"><img src="icons/mongodb_neon3d.svg"><span>MongoDB</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section">
+    <section id="certifications" class="section parallax">
       <h2 class="section-title">Certifications</h2>
       <div class="grid two">
         <div class="card tilt-card">
           <h3>IBM Data Science 101</h3>
           <p class="company">IBM SkillsBuild</p>
-          <p>
-            Completed foundational training in data science covering data analysis, visualization,
-            and introductory machine learning workflows.
-          </p>
+          <p>Data science foundations and ML basics.</p>
         </div>
+
         <div class="card tilt-card">
           <h3>Java Programming</h3>
           <p class="company">Great Learning</p>
-          <p>
-            Gained strong fundamentals in Java programming, including OOP concepts and problem solving
-            using Java.
-          </p>
+          <p>Strong fundamentals in OOP and Java development.</p>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section parallax">
       <h2 class="section-title">Contact</h2>
       <div class="card contact-card tilt-card">
         <p>
           I’m open to opportunities in <strong>AI/ML Engineering, GenAI, NLP, and Computer Vision</strong>.
-          Feel free to reach out for collaborations, roles, or projects.
         </p>
+
         <div class="contact-grid">
           <div>
-            <p><strong>Email:</strong></p>
-            <a href="mailto:vinayakvijayanagar6@gmail.com">
-              vinayakvijayanagar6@gmail.com
-            </a>
+            <strong>Email:</strong><br>
+            <a href="mailto:vinayakvijayanagar6@gmail.com">vinayakvijayanagar6@gmail.com</a>
           </div>
+
           <div>
-            <p><strong>Phone:</strong></p>
+            <strong>Phone:</strong><br>
             <a href="tel:+919945193613">+91 99451 93613</a>
           </div>
+
           <div>
-            <p><strong>GitHub:</strong></p>
+            <strong>GitHub:</strong><br>
             <a href="https://github.com/Vinayaksvijayanagar" target="_blank">
               github.com/Vinayaksvijayanagar
             </a>
           </div>
+
           <div>
-            <p><strong>LinkedIn:</strong></p>
-            <a href="https://www.linkedin.com/in/vinayak-vijayanagar-07937b36a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-              linkedin.com/in/your-link-here
+            <strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/vinayak-vijayanagar-07937b36a" target="_blank">
+              linkedin.com/in/vinayak-vijayanagar
             </a>
           </div>
         </div>
+
         <div class="hero-actions" style="margin-top: 1.5rem;">
-          <a href="https://drive.google.com/file/d/14B78rR1igCmemSEyuqrgiCuQXgTHeCCJ/view?usp=drivesdk" class="btn ghost">Download Resume (PDF)</a>
+          <a href="https://drive.google.com/file/d/14B78rR1igCmemSEyuqrgiCuQXgTHeCCJ/view?usp=drivesdk"
+             class="btn ghost">Download Resume (PDF)</a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Vinayak SV </p>
+    <p>© <span id="year"></span> Vinayak SV</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
