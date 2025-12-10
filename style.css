@@ -458,6 +458,65 @@ main {
 }
 
 /* SKILLS */
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.skill-item img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.skill-item span {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-top: 0.3rem;
+}
+
+/* Hover: 3D Tilt & Glow */
+.skill-item:hover {
+  transform: translateY(-6px) scale(1.05) rotateX(6deg);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 
+    0 0 25px rgba(124, 58, 237, 0.6),
+    0 12px 40px rgba(0,0,0,0.8);
+}
+
+.skill-item:hover img {
+  filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.9));
+  transform: scale(1.12);
+}
+
+/* Optional floating animation */
+@keyframes floatSkill {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+.skill-item {
+  animation: floatSkill 3s ease-in-out infinite;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -545,3 +604,4 @@ main {
     padding: 0 0.8rem 2.5rem;
   }
 }
+
