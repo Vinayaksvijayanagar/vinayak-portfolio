@@ -1,227 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vinayak SV | AI/ML Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vinayak SV - AI/ML Engineer specializing in GenAI, NLP, and Computer Vision. Portfolio showcasing projects and experience." />
+    <meta name="keywords" content="AI Engineer, Machine Learning, GenAI, NLP, Computer Vision, Portfolio" />
+    <meta name="author" content="Vinayak S V" />
+
+    <!-- Title -->
+    <title>Vinayak SV | AI/ML Engineer Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- PARTICLES BACKGROUND -->
-  <canvas id="particles-bg"></canvas>
-  <div class="bg-orbit"></div>
-  <div class="bg-orbit orbit-2"></div>
+    <!-- Background Effects -->
+    <canvas id="particles-bg"></canvas>
+    <div class="bg-orbit"></div>
+    <div class="bg-orbit orbit-2"></div>
 
-  <!-- NAVBAR -->
-  <header class="nav">
-    <div class="logo">VINAYAK<span>SV</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#github">GitHub</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!-- ================= NAVBAR ================= -->
+    <header class="nav">
+        <div class="logo">VINAYAK<span>SV</span></div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
+    <main>
 
-    <!-- HERO -->
-    <section class="hero parallax">
-      <div class="hero-left">
-        <p class="location">Belagavi, India</p>
-        <h1 class="hero-title">
-          AI/ML Engineer<br />
-          <span class="highlight-3d">GenAI · NLP · CV</span>
-        </h1>
+        <!-- ================= HERO ================= -->
+        <section class="hero parallax" id="home">
+            <div class="hero-left">
+                <p class="location">Belagavi, India</p>
 
-        <p class="hero-subtitle">
-          I design and deploy intelligent systems using deep learning,
-          optimized ML pipelines, and ensemble models that outperform baselines.
-        </p>
+                <h1 class="hero-title">
+                    AI/ML Engineer<br />
+                    <span class="highlight-3d">GenAI · NLP · CV</span>
+                </h1>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn ghost">Contact Me</a>
-        </div>
+                <p class="hero-subtitle">
+                    I design and deploy intelligent systems using deep learning,
+                    optimized ML pipelines, and ensemble models that outperform
+                    baselines in real-world scenarios.
+                </p>
 
-        <div class="hero-meta">
-          <span>vinayakvijayanagar6@gmail.com</span>
-          <span>+91 9945193613</span>
-        </div>
-      </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn ghost">Contact Me</a>
+                </div>
 
-      <div class="hero-right tilt-card">
-        <div class="hero-orbit">
-          <div class="hero-avatar">
-            <img src="images/profile.jpg" alt="Vinayak SV">
-          </div>
-          <div class="hero-orbit-ring ring-1"></div>
-          <div class="hero-orbit-ring ring-2"></div>
-          <div class="hero-orbit-node node-1">ML</div>
-          <div class="hero-orbit-node node-2">CV</div>
-          <div class="hero-orbit-node node-3">NLP</div>
-          <div class="hero-orbit-node node-4">GenAI</div>
-        </div>
-        <p class="hero-tagline">
-          “Turning data into deployable, production-ready AI.”
-        </p>
-      </div>
-    </section>
+                <div class="hero-meta">
+                    <span>Email: vinayakvijayanagar6@gmail.com</span>
+                    <span>Phone: +91 9945193613</span>
+                </div>
+            </div>
 
+            <div class="hero-right tilt-card">
+                <div class="hero-orbit">
+                    <div class="hero-avatar">
+                        <img src="images/profile.jpg" alt="Vinayak SV Profile Photo" />
+                    </div>
+                    <div class="hero-orbit-ring ring-1"></div>
+                    <div class="hero-orbit-ring ring-2"></div>
+                    <div class="hero-orbit-node node-1">ML</div>
+                    <div class="hero-orbit-node node-2">CV</div>
+                    <div class="hero-orbit-node node-3">NLP</div>
+                    <div class="hero-orbit-node node-4">GenAI</div>
+                </div>
+                <p class="hero-tagline">
+                    “Turning data into deployable, production-ready AI.”
+                </p>
+            </div>
+        </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section parallax">
-      <h2 class="section-title">About & Education</h2>
-      <div class="grid two">
-        <div class="card tilt-card">
-          <h3>About Me</h3>
-          <p>
-            I’m <strong>Vinayak S V</strong>, an AI/ML Engineer specialized in building
-            end-to-end machine learning solutions.
-          </p>
-        </div>
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section parallax">
+            <h2 class="section-title">About & Education</h2>
 
-        <div class="card tilt-card">
-          <h3>Education</h3>
-          <ul class="timeline">
-            <li>
-              BE in Artificial Intelligence and Data Science (2021 – 2025)<br />
-              CGPA: <strong>8.60</strong>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            <div class="grid two">
+                <div class="card tilt-card">
+                    <h3>About Me</h3>
+                    <p>
+                        I’m <strong>Vinayak S V</strong>, an AI/ML Engineer specialized in
+                        building end-to-end machine learning solutions—from data
+                        preprocessing and model design to deployment.
+                    </p>
+                    <p>
+                        Passionate about deep learning, GenAI, NLP, and
+                        computer vision with a focus on scalable,
+                        production-ready systems.
+                    </p>
+                </div>
 
+                <div class="card tilt-card">
+                    <h3>Education</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>BE in AI & Data Science</strong><br />
+                            East Point College of Engineering and Technology (2021–2025)<br />
+                            CGPA: 8.60 / 10
+                        </li>
+                        <li>
+                            Class XII – 99.3% (2021)
+                        </li>
+                        <li>
+                            SSLC – 94.08% (2019)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section parallax">
-      <h2 class="section-title">Experience</h2>
-      <div class="grid two">
+        <!-- ================= FOOTER ================= -->
+    </main>
 
-        <div class="card tilt-card">
-          <span class="chip">Jun 2025 – Dec 2025 · Remote</span>
-          <h3>GenAI Intern</h3>
-          <p class="company">Vidarka Technology</p>
-        </div>
+    <footer class="footer">
+        <p>© <span id="year"></span> Vinayak SV. All Rights Reserved.</p>
+    </footer>
 
-        <div class="card tilt-card">
-          <span class="chip">Sep 2024 – Feb 2025 · Bengaluru</span>
-          <h3>AI-ML Engineer</h3>
-          <p class="company">Rooman Technologies Pvt. Ltd.</p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- GITHUB LIVE SECTION -->
-    <section id="github" class="section parallax">
-      <h2 class="section-title">GitHub Activity</h2>
-
-      <div class="card tilt-card github-card">
-        <div class="github-stats">
-          <div class="stat-box">
-            <h3 id="repoCount">0</h3>
-            <p>Public Repositories</p>
-          </div>
-          <div class="stat-box">
-            <h3 id="followerCount">0</h3>
-            <p>Followers</p>
-          </div>
-          <div class="stat-box">
-            <h3 id="followingCount">0</h3>
-            <p>Following</p>
-          </div>
-        </div>
-
-        <a href="https://github.com/Vinayaksvijayanagar"
-           target="_blank"
-           class="btn primary">
-           Visit My GitHub →
-        </a>
-      </div>
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section parallax">
-      <h2 class="section-title">Projects</h2>
-      <div class="grid three">
-
-        <div class="card tilt-card">
-          <h3>Coffee Leaf Disease Detection</h3>
-          <p>92% accurate CNN model.</p>
-        </div>
-
-        <div class="card tilt-card">
-          <h3>Blood Bank Management System</h3>
-          <p>Full-stack PHP system.</p>
-        </div>
-
-        <div class="card tilt-card">
-          <h3>Rainfall Prediction</h3>
-          <p>Time-series ML forecasting.</p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="section parallax">
-      <h2 class="section-title">Skills</h2>
-      <div class="grid two">
-        <div class="card tilt-card">Python, Java, SQL</div>
-        <div class="card tilt-card">TensorFlow, PyTorch, Scikit-learn</div>
-      </div>
-    </section>
-
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section parallax">
-      <h2 class="section-title">Certifications</h2>
-      <div class="grid two">
-
-        <div class="card tilt-card">
-          <h3>Python for Data Science</h3>
-          <a href="https://courses.cognitiveclass.ai/certificates/ba525e67d2d04262ae2b44c0e7c17e96"
-             target="_blank">
-             View Certificate →
-          </a>
-        </div>
-
-        <div class="card tilt-card">
-          <h3>Data Analyst Virtual Experience</h3>
-          <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69a5639286615e42ab9e03d8_1772447229229_completion_certificate.pdf"
-             target="_blank">
-             View Certificate →
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="section parallax">
-      <h2 class="section-title">Contact</h2>
-      <div class="card contact-card tilt-card">
-        <p>Email: vinayakvijayanagar6@gmail.com</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Vinayak SV</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
